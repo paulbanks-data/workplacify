@@ -12,7 +12,7 @@
     "dx:next": "run-s db-up migrate-dev db-seed && next dev --experimental-https",
     "dx": "run-p dx:* --print-label",
     "dev": "npm run dx:next",
-    "prebuild": "run-s generate migrate",
+    "prebuild": "prisma generate"
     "build": "next build",
     "build-ci": "next build",
     "start": "next start",
